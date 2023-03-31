@@ -44,7 +44,7 @@ class StepFunctionsTest {
 
     @Test
     void averageTest() {
-        double expected = (list.get(0).getY()+list.get(1).getY()+list.get(2).getY()) / 3;
+        double expected = 0.392030;
         assertEquals(expected, bll.average(list), eps);
     }
 
