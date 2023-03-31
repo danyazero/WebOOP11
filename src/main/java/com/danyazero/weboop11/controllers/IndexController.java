@@ -24,8 +24,8 @@ public class IndexController {
         List<Point> points = bll.getPointList(start, finish, step);
         model.addAttribute("list", points);
         model.addAttribute("average", bll.average(points));
-        model.addAttribute("max", bll.getMaxPoint(points).getY());
-        model.addAttribute("min", bll.getMinPoint(points).getY());
+        model.addAttribute("max", bll.getMaxPoint(points));
+        model.addAttribute("min", bll.getMinPoint(points));
 
         return "steps";
     }
