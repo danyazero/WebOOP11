@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en"xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<form action="/steps" method="post">
+        <input type="text" placeholder="Start" name="start">
+        <input type="text" placeholder="Finish" name="finish">
+    <input type="text" placeholder="Step" name="step">
+    <input th:type="submit" value="табулювати!">
+</form>
+</body>
+</html>
